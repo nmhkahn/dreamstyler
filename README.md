@@ -1,6 +1,6 @@
 ## DreamStyler: Paint by Style Inversion with Text-to-Image Diffusion Models
 
-[Project Page](https://nmhkahn.github.io/dreamstyler) [**Paper**](https://arxiv.org)
+[[**Project Page**](https://nmhkahn.github.io/dreamstyler)] [[**Paper**](https://arxiv.org)]
 
 [Namhyuk Ahn](nmhkahn.github.io)<sup>1</sup>, [Junsoo Lee](https://ssuhan.github.io/)<sup>1</sup>, [Chunggi Lee](https://chungyi347.github.io)<sup>1,2</sup>, [Kunhee Kim](https://kunheekim.xyz/)<sup>3</sup>, [Daesik Kim](https://scholar.google.com/citations?user=YUcWWbEAAAAJ)<sup>1</sup>, [Seung-Hun Nam](https://scholar.google.com/citations?user=QIjkOgEAAAAJ)<sup>1</sup>, [Kibeom Hong](https://scholar.google.com/citations?user=-imqSqoAAAAJ)<sup>4†</sup> <br>
 NAVER WEBTOON AI<sup>1</sup>,  Harvard University<sup>2</sup>, KAIST<sup>3</sup>, SwatchOn<sup>4</sup> <br>
@@ -17,7 +17,7 @@ In addition, with content and style guidance, DreamStyler exhibits flexibility t
 Experimental results demonstrate its superior performance across multiple scenarios, suggesting its promising potential in artistic product creation.
 
 ## Codes
-Training code and datasets will be available soon!
+The training code and datasets will soon be hosted at [webtoon/dreamstyler](https://github.com/webtoon/dreamstyler). Please stay tuned!
 
 ## Citation
 ```
