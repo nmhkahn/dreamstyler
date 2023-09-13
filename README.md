@@ -5,9 +5,8 @@
 [Namhyuk Ahn](nmhkahn.github.io)<sup>1</sup>, [Junsoo Lee](https://ssuhan.github.io/)<sup>1</sup>, [Chunggi Lee](https://chungyi347.github.io)<sup>1,2</sup>, [Kunhee Kim](https://kunheekim.xyz/)<sup>3</sup>, [Daesik Kim](https://scholar.google.com/citations?user=YUcWWbEAAAAJ)<sup>1</sup>, [Seung-Hun Nam](https://scholar.google.com/citations?user=QIjkOgEAAAAJ)<sup>1</sup>, [Kibeom Hong](https://scholar.google.com/citations?user=-imqSqoAAAAJ)<sup>4†</sup> <br>
 NAVER WEBTOON AI<sup>1</sup>,  Harvard University<sup>2</sup>, KAIST<sup>3</sup>, SwatchOn<sup>4</sup> <br>
 Corresponding author<sup>†</sup><br>
-arXiv preprint arXiv:xxx, 2023
 
-![teaser](assets/teaser.jpg)
+![teaser](assets/fig1.jpg)
 
 ### Abstract
 Recent progresses in large-scale text-to-image models have yielded remarkable accomplishments, finding various applications in art domain.
