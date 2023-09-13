@@ -25,6 +25,9 @@
 
 
   <title>DreamStyler: Paint by Style Inversion with Text-to-Image Diffusion Models</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
   <link rel="icon" href="./static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -109,9 +112,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" width="150%" src="assets/fig1.jpg">
-      <h2 class="subtitle has-text-justified">
-          <p>Figure 1. <b>DreamStyler</b> synthesizes outputs based on a given
+      <img id="teaser" width="150%" src="assets/fig_teaser.jpg">
+      <h2 class="content has-text-justified">
+          <p><b>DreamStyler</b> synthesizes outputs based on a given
 context along with a style reference. Note that each model is
 trained on a single style image shown in this figure.</p>
       </h2>
@@ -143,6 +146,92 @@ Experimental results demonstrate its superior performance across multiple scenar
 <!-- End paper abstract -->
 
 
+<section class="section is-small" style="background-color:#FDF7F0">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">Model Architecture </h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">    
+        <img id="model" width="70%" src="assets/fig_overview.png">
+        <h3 class="content has-text-justified">
+          <p><b>Model overview.</b>
+            (a) DreamStyler constructs training prompt with an opening text \(C_o\), multi-stage style tokens \(\mathbf{S^*}\),
+            and a context description \(C_c\), which is captioned with BLIP-2 and human feedback.
+            DreamStyler projects the training prompt into multi-stage textual embeddings \(\mathbf{v}^* = \{v^*_1,\dots,v^*_{T}\}\), where \(T\) is the number of stages (a chunk of the denoising timestep; we use \(T=6\) by default).
+            As a result, the denoising U-Net provides distinct textual information at each stage.
+            (b) DreamStyler prepares the textual embedding using a provided inference prompt.
+            For style transfer, DreamStyler employs ControlNet to comprehend the context information
+            from a content image.
+          </p>
+        </h3>   
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <!-- <div class="hero-body"> -->
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+              <h2 class="title is-3">Text-to-image Synthesis</h2>
+          </div>
+        </div>
+        
+        <div id="results-carousel" class="carousel results-carousel">
+            <div class="item"><img src="assets/fig_t2i_1.pdf"/></div>
+            <div class="item"><img src="assets/fig_t2i_2.pdf"/></div>
+            <div class="item"><img src="assets/fig_t2i_3.pdf"/></div>
+            <div class="item"><img src="assets/fig_t2i_4.pdf"/></div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section is-small" style="background-color:#FDF7F0">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-fifths">
+            <h2 class="title is-3">Style Transfer</h2>
+        </div>
+      </div>
+
+      <div id="results-carousel" class="carousel results-carousel">
+          <div class="item"><img src="assets/fig_st_1.pdf"/></div>
+          <div class="item"><img src="assets/fig_st_2.pdf"/></div>
+          <div class="item"><img src="assets/fig_st_3.pdf"/></div>
+          <div class="item"><img src="assets/fig_st_4.pdf"/></div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section is-small">
+  <!-- <div class="hero-body"> -->
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+              <h2 class="title is-3">Style Mixing</h2>
+          </div>
+        </div>
+
+        <img id="model" width="100%" src="assets/fig_style_mixing.pdf">
+        <h2 class="content has-text-justified">
+          <p><b>Style mixing.</b>
+            Multi-stage TI facilitates style mixing from various style references.
+            A user can customize a new style by substituting style tokens at different stages \(t\).
+            For example, the style token closer to \(t=T\) tends to influence the structure of the image,
+            while those closer to \(t=0\) have a stronger effect on local and detailed attributes.
+            For comparison, we display the baseline that employs all style tokens at every stage (i.e.
+            using "A painting in \(S^A_t\), \(S^B_t\), \(S^C_t\) style" at all stages).
+          </p>
+      </h2>
+
+        
+    </div>
+  </section>
 
 
 <!--BibTex citation -->
