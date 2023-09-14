@@ -24,7 +24,7 @@ The training code and datasets will soon be hosted at [webtoon/dreamstyler](http
 ```
 @article{ahn2023dreamstyler,
   title={DreamStyler: Paint by Style Inversion with Text-to-Image Diffusion Models}, 
-  author={Namhyuk Ahn and Junsoo Lee and Chunggi Lee and Kunhee Kim and Daesik Kim and Seung-Hun Nam and Kibeom Hong},
+  author={Ahn, Namhyuk and Lee, Junsoo and Lee, Chunggi and Kim, Kunhee and Kim, Daesik and Nam, Seung-Hun and Hong, Kibeom},
   journal={arXiv preprint arXiv:2309.06933},
   year={2023},
 }
