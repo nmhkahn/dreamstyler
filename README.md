@@ -18,7 +18,7 @@ In addition, with content and style guidance, DreamStyler exhibits flexibility t
 Experimental results demonstrate its superior performance across multiple scenarios, suggesting its promising potential in artistic product creation.
 
 ## Codes
-The training code and datasets will soon be hosted at [webtoon/dreamstyler](https://github.com/webtoon/dreamstyler). Please stay tuned!
+The training code and datasets are in [webtoon/dreamstyler](https://github.com/webtoon/dreamstyler).
 
 ## Citation
 ```
